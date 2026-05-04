@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio8 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    string[] alimentos = new string[4] { "manzana", "pan", "pastel", "filete" };
+    void Start()
+    {
+        alimentos[0] = "pastel";
+        alimentos[2] = "manzana";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

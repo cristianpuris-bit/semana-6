@@ -1,0 +1,25 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio4 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    List<string> mascotas = new List<string>(); 
+    void Start()
+    {
+        mascotas.Add("perro");
+        mascotas.Add("gato");
+        mascotas.Add("lagarto");
+
+
+        mascotas.Remove("perro");
+
+        Debug.Log(mascotas.Count);  
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,18 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio6 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    int[] recompensa = new int[3] { 10,20, 30 };
+    void Start()
+    {
+        string resultado = recompensa[0] < recompensa[1] ? "recompensa 10 es menor " : "recompensa 20 es mayor";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

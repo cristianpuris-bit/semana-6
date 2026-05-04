@@ -1,0 +1,23 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio2 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    string[] armas = new string[5] {"espada", "arco", "hacha", "dagas", "baston" };
+    void Start()
+    {
+
+        armas[1] = "arco dorado";
+
+        print(armas[1]);
+        
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,39 @@
+using UnityEditor.Experimental.GraphView;
+using using System.Collections.Generic;
+UnityEngine;
+
+public class ejercicio9 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    int[] recompensas = new int[3] { 50, 60, 70 };
+    void Start()
+    {
+        if ((recompensas[0] > recompensas[1]) && recompensas[0] > recompensas[2])
+        {
+            Debug.Log("la recompensa 50 es mayor que las demas ");
+
+        }
+        else if ((recompensas[1] > recompensas[0]) && recompensas[1] > recompensas[2])
+        {
+            Debug.Log("la recompensa 60 es amyor que las demas");
+        }
+        else if ((recompensas[2] > recompensas[0]) && recompensas[2] > recompensas[1])
+        {
+            Debug.Log("la recompensa 70 es mayor que las demas");
+        }
+
+        else
+            Debug.Log("no tienes la recompensa");
+
+
+    }
+
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

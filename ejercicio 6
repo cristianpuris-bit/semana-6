@@ -1,0 +1,16 @@
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+public class ejercicio1 : MonoBehaviour
+{
+
+    string[] habilidades = new string[3] { "sprin", "critico", "doble salto" };
+    void Start()
+    {
+        
+       Debug.Log(habilidades[0] + habilidades [habilidades.Length-1]);
+    }
+
+    // Update is called once per frame
+    void Update()

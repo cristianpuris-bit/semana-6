@@ -1,0 +1,22 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio5 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    List<int> recompensas = new List<int>();
+    void Start()
+    {
+        recompensas.Add(10);
+        recompensas.Add(20);
+        recompensas.Add(30);
+
+        print(recompensas.Count);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,23 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ejercicio3 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    List<string> pociones = new List<string>();
+    void Start()
+    {
+        pociones.Add("veneno");
+        pociones.Add("vida");
+        pociones.Add("fuerza");
+        pociones.Add("resistencia");
+
+        Debug.Log(pociones[0]);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

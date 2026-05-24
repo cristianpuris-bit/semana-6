@@ -1,0 +1,36 @@
+using System.Collections.Generic;
+using NUnit.Framework;
+using UnityEngine;
+
+public class b3_15 : MonoBehaviour
+{
+    public List<string> útiles = new List<string>();
+    void Start()
+    {
+        útiles.Add("mochila");
+        útiles.Add("tajador");
+        útiles.Add("hojas");
+        útiles.Add("celular");
+        útiles.Add("pinceles");
+        útiles.Add("tajador");
+        bool encontrado = false;
+        for (int i = 0; i < útiles.Count; i++)
+        {
+            if (útiles[1] == útiles[i] && i != 1)
+            {
+                encontrado = true;
+                Debug.Log($"{útiles[1]} de la posición 1 es igual al elemento {útiles[i]} de la posición {i}");
+            }
+        }
+        if (!encontrado)
+        {
+            Debug.Log($"{útiles[1]} de la posición 1 es diferente a todos los elementos de la lista");
+        }
+
+    }
+
+    void Update()
+    {
+
+    }
+}

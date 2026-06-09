@@ -1,20 +1,45 @@
-using System.Collections.Generic;
+using UnityEditor. Experimental.GraphView;
 using UnityEngine;
 
-public class Ejercicio11 : MonoBehaviour
-{
-    int[] puntaje = new int[5] { 5, 10, 15, 20, 30 };
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        int i = 0;
-        while (i < puntaje.Length)
-        {
-            Debug.Log(puntaje[i]);
-            i++;
-        }
 
+public class ejercicioll: MonoBehaviour
+
+{
+
+int[] recompensa = new int[3] { 10, 20, 30 };
+
+void Start()
+
+{
+   int a = recompensa[0];
+   int b = recompensa [1];
+   if (a > b)
+
+    { 
+     Debug.Log("el numero mayor es + a);
     }
 
-    // Update is called once per frame
-    void Update()
+else if
+  (b > a)
+   { 
+    Debug.Log("el numero mayor es " + b);
+   }
+
+else
+
+{
+Debug.Log("ambos numeros son iguales");
+}
+
+}
+
+// Update is called once per frame
+
+Mensaje de Unity O referencias
+
+void Update()
+{
+
+}
+
+} 

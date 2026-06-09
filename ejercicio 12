@@ -7,20 +7,32 @@ public class Ejercicio12 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int suma = 0;   
-        int i = 0;
+        int a = recompensas[0];
+        int b= recompensas [2];
 
-        while (i < dañoTotal.Length)
-        {
-            suma += dañoTotal[i];
-            Debug.Log("Realizaste " + dañoTotal[i] + " daño total ");
-            
-            i++;
+        if (a > b)
 
-        }
-        Debug.Log("un total de " + suma);
+      {
+       Debug.Log("el numero mayor es " + a);
+      }
+
+      else if
+        (b > a)
+      {
+       Debug.Log("el numero mayor es " + b);
+      }
+
+      else
+
+      {
+       Debug.Log("ambos numeros son iguales");
+      }
 
     }
 
     // Update is called once per frame
     void Update()
+    {
+
+    } 
+} 

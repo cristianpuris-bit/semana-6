@@ -1,19 +1,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ejercicio7 : MonoBehaviour
+public class Ejercicio12 : MonoBehaviour
 {
+    int[] dañoTotal = new int[4] { 20, 25, 30, 35 };
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    int[] recompensas = new int[3] { 20, 30, 40 };
     void Start()
     {
-        string resultados = recompensas[0] == recompensas[recompensas.Length-1] ? "recompensa 20 es menor" : "las recompensas son iguales";
+        int suma = 0;   
+        int i = 0;
+
+        while (i < dañoTotal.Length)
+        {
+            suma += dañoTotal[i];
+            Debug.Log("Realizaste " + dañoTotal[i] + " daño total ");
+            
+            i++;
+
+        }
+        Debug.Log("un total de " + suma);
+
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
-    }
-}
-

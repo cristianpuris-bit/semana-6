@@ -9,6 +9,9 @@ public class ejercicio8 : MonoBehaviour
     {
         alimentos[0] = "pastel";
         alimentos[2] = "manzana";
+        {       
+         print(alimentos[0]);
+        } 
     }
 
     // Update is called once per frame
